@@ -31,6 +31,12 @@ public class MemoryCard : MonoBehaviour
         if(cardBack.activeSelf)
         {
             cardBack.SetActive(false);
+            sceneController.CardRevealed(this);
         }
+    }
+
+    public void Unreveal()
+    {
+        cardBack.SetActive(true);
     }
 }
